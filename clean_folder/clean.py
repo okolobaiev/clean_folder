@@ -164,19 +164,19 @@ def remove_folders(folders):
             print(f"Can't delete folder: {folder}")
 
 
-if __name__ == "__main__":
+def main():
     if len(sys.argv) < 2:
         print("Path don't enter")
-        exit
+        exit()
 
     p = Path(sys.argv[1])
     if not p.exists():
         print("Path not found")
-        exit
+        exit()
 
     if not p.is_dir():
         print("You must enter path")
-        exit
+        exit()
 
     # create new tranlate dictionary
     create_trans()
@@ -196,3 +196,7 @@ if __name__ == "__main__":
     remove_folders(folders)
 
     print("Done")
+
+
+if __name__ == "__main__":
+    main()
