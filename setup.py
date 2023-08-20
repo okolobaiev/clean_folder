@@ -9,5 +9,5 @@ setup(
     author_email="o.kolobaiev@gmail.com",
     license="MIT",
     packages=["clean_folder"],
-    entry_points={"console_scripts": [""]},
+    entry_points={"console_scripts": ["clean_folder.clean.main"]},
 )
